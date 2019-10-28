@@ -1,0 +1,30 @@
+<div class="container-fluid Header__wrapper p-0 m-0 w-100">
+  <nav class="navbar navbar-expand-lg navbar-light container Header">
+    <a class="navbar-brand" routerLink="/">
+      <img src="assets/images/ozcandanseyahatlogo.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mr-0 mr-lg-3">
+          <a class="nav-link" [routerLink]="'kurumsal'"><i class="fa fa-car mr-1"></i>KURUMSAL</a>
+        </li>
+        <li class="nav-item mr-0 mr-lg-3">
+          <a class="nav-link" [routerLink]="'hizmetlerimiz'"><i class="fa fa-car mr-1"></i>HİZMETLERİMİZ</a>
+        </li>
+        <li class="nav-item mr-0 mr-lg-3">
+          <a class="nav-link" [routerLink]="'referanslarimiz'"><i class="fa fa-car mr-1"></i>REFERANSLARIMIZ</a>
+        </li>
+        <li class="nav-item mr-0 mr-lg-3">
+          <a class="nav-link" [routerLink]="'kariyer'"><i class="fa fa-car mr-1"></i>KARİYER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'iletisim'"><i class="fa fa-car mr-1"></i>İLETİŞİM</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

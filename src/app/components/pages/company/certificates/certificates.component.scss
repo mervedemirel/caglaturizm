@@ -1,0 +1,23 @@
+.Certificate {
+
+  &__title {
+    color: #252162;
+    font-size: 2.2rem;
+  }
+
+  &__border {
+    border-right: 1px solid black;
+
+    &--2 {
+      @media (min-width: 768px) and (max-height: 991px) {
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Certificate__border {
+    border: none !important;
+  }
+}

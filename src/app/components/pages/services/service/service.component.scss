@@ -1,0 +1,55 @@
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/style.css */
+a:focus {
+  color: #30a74b;
+}
+
+.ortadiv {
+  display: initial;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.title2 h1 {
+  color: #252161;
+  font-weight: 300;
+  font-size: 36px;
+  padding-bottom: 8px;
+}
+
+.samet:hover {
+  background: #ca5c5c;
+}
+
+h1 {
+  font-weight: 300 !important;
+}
+
+.Service--hr {
+  border-top: 8px solid #183d6f;
+
+  & > article > div > div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+.Service__title {
+
+  & > p {
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+  }
+}
+
+

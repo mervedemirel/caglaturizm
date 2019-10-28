@@ -1,0 +1,43 @@
+.aboutitem {
+  font-family: Myriad Pro;
+  border: 1px solid grey;
+  padding: 3px;
+  line-height: 16px;
+  min-height: 50px;
+}
+
+.aboutitem .inner {
+  border-left: 1px solid black;
+}
+
+.aboutitem h2 {
+  font-family: Open Sans;
+  font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+  body .aboutitem {
+    min-height: 223px;
+  }
+}
+
+@media (max-width: 992px) {
+  body .aboutitem {
+    min-height: 0px;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 991px) {
+  body .aboutitem {
+    min-height: 0px;
+  }
+}
+
+.hk-icon {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    height: 70px;
+  }
+  @media (max-width: 574px) {
+    height: 60px;
+  }
+}

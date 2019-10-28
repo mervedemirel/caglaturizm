@@ -1,0 +1,89 @@
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/style.css */
+
+*:hover {
+  text-decoration: none;
+}
+
+.linkToAllBtn {
+  color: white;
+  display: inline-block;
+  background-color: #e3000f;
+  border-radius: 12px;
+  padding: 5px 35px;
+  border: 4px solid #e3000f;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.linkToAllBtn:hover {
+  background-color: #ca5c5c;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: white;
+}
+
+.linkToAllBtn i {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.linkToAllBtn span {
+  font-family: "Open Sans";
+}
+
+a:focus {
+  color: #30a74b;
+}
+
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/main.css */
+.disla {
+  border-left: 9px solid #e3000f;
+}
+
+.disla2 {
+  border-left: 5px solid #e3000f;
+}
+
+.mainbanner {
+  background-image: url('/assets/images/anasayfa_4.jpg');
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.mainbanner p {
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .mainbanner .mt-5 {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  .mainbanner p {
+    color: white;
+  }
+}
+
+@media (max-width: 575px) {
+  section {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 668px) {
+  section {
+    text-align: center !important;
+  }
+}
+
+.Parallax {
+
+  &__title {
+    //#e3000f
+    font-size: 2rem;
+  }
+}

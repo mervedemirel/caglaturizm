@@ -1,0 +1,647 @@
+.Footer {
+  border-top: 1px solid black;
+
+  &__top {
+
+    &--text {
+      font-size: 2rem;
+
+      & a {
+        color: black;
+      }
+    }
+  }
+
+  &__bottom {
+    background-color: #0b0a0abf;
+  }
+}
+
+
+/*! CSS Used from: https://use.fontawesome.com/releases/v5.0.6/css/all.css */
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-map-marker-alt:before {
+  content: "\f3c5";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/style.css */
+.footer-top {
+  padding: 60px 0;
+  background: #0b0a0abf;
+  text-align: left;
+  color: #f9f9f9;
+}
+
+.footer-top h3 {
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.footer-about img.logo-footer {
+  max-width: 250px;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.footer-contact p {
+  word-wrap: break-word;
+}
+
+.footer-contact i {
+  padding-right: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.footer-contact p a {
+  border: 0;
+}
+
+.footer-contact p a:hover, .footer-contact p a:focus {
+  border: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  border: 0;
+}
+
+.footer-links a:hover, .footer-links a:focus {
+  color: #fff;
+}
+
+a:focus {
+  color: #30a74b;
+}
+
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/media-queries.css */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer-top {
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-top {
+    padding: 40px 0;
+  }
+  .footer-contact i {
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-top {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .footer-contact i {
+    padding-right: 5px;
+  }
+}
+
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/bootstrap.min.css */
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+img {
+  border-style: none;
+}
+
+@media print {
+  *, ::after, ::before, div::first-letter, div::first-line, p::first-letter, p::first-line {
+    text-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  a, a:visited {
+    text-decoration: underline;
+  }
+  img {
+    page-break-inside: avoid;
+  }
+  h3, p {
+    orphans: 3;
+    widows: 3;
+  }
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: #014c8c;
+  text-decoration: underline;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+h3 {
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width: 576px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+.col, .col-lg-3, .col-lg-4, .col-md-4, .col-md-6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .col, .col-lg-3, .col-lg-4, .col-md-4, .col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col, .col-lg-3, .col-lg-4, .col-md-4, .col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col, .col-lg-3, .col-lg-4, .col-md-4, .col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col, .col-lg-3, .col-lg-4, .col-md-4, .col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.col {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.333333%;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-md-6 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-lg-4 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.333333%;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .offset-lg-1 {
+    margin-left: 8.333333%;
+  }
+}
+
+/*! CSS Used from: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css */
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/animate.css */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/bootstrap.css */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col, .col-md-4, .col-md-6, .col-lg-3, .col-lg-4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-lg-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .offset-lg-1 {
+    margin-left: 8.333333%;
+  }
+}
+
+@media print {
+  *, *::before, *::after {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+  a:not(.btn) {
+    text-decoration: underline;
+  }
+  img {
+    page-break-inside: avoid;
+  }
+  p, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h3 {
+    page-break-after: avoid;
+  }
+  .container {
+    min-width: 992px !important;
+  }
+}
+
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/main.css */
+footer a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer a:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: linear-gradient(red, yellow);
+  color: #79a05f;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+body p {
+  font-family: Open Sans;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+body h3 {
+  font-family: Open Sans;
+  color: #252161;
+  font-size: 24px;
+  font-family: Open Sans;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*! CSS Used from: https://use.fontawesome.com/releases/v5.0.6/css/all.css */
+.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
+.fa-facebook:before{content:"\f09a";}
+.fa-instagram:before{content:"\f16d";}
+.fa-linkedin-in:before{content:"\f0e1";}
+.fa-twitter:before{content:"\f099";}
+.fab{font-family:Font Awesome\ 5 Brands;}
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/style.css */
+a:focus{color:#30a74b;}
+.footer-bottom{padding:15px 0 17px 0;background:#444;text-align:left;color:#aaa;}
+.footer-social{padding-top:3px;text-align:right;}
+.footer-social a{margin-left:20px;color:#777;border:0;}
+.footer-social a:hover,.footer-social a:focus{color:#79a05f;border:0;}
+.footer-social i{font-size:24px;vertical-align:middle;}
+.footer-copyright{padding-top:5px;}
+.footer-copyright a{color:#fff;border:0;}
+.footer-copyright a:hover,.footer-copyright a:focus{color:#aaa;border:0;}
+/*! CSS Used from: file:///home/mustafa/Downloads/ozcandanseyahat/assets/css/media-queries.css */
+@media (max-width: 767px){
+  .footer-bottom,.footer-social{text-align:center;}
+  .footer-social a{margin:0 10px;}
+}

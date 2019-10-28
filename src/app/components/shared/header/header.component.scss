@@ -1,0 +1,82 @@
+.Header {
+  background: transparent;
+
+
+  &__wrapper {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(white, rgba(255, 255, 255, 0));
+    @media (max-width: 991px) {
+      background: white;
+      background-image: none;
+      position: relative;
+    }
+  }
+}
+
+.nav-link {
+  color: #183d6f !important;
+  font-size: 1rem;
+
+  & > i {
+    opacity: 0;
+    transition: opacity 1.2s;
+    color: red;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &:hover > i {
+    opacity: 1;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .5s;
+    background: red;
+  }
+
+  &:hover::after {
+    width: 100%;
+    //display: block;
+    transition: width .5s;
+  }
+}
+
+.navbar-brand {
+
+  & > img {
+    @media (max-width: 574px) {
+      height: 38px;
+    }
+  }
+}
+
+.nav-item {
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: block;
+    max-height: 0;
+    visibility: hidden;
+    transition: max-height 0.7s cubic-bezier(0, 1, 0, 1) !important;
+  }
+
+  .navbar-collapse.show {
+    max-height: 1000px !important;
+    visibility: visible;
+    transition: max-height 0.5s cubic-bezier(1, 0, 1, 0), visibility 1s ease-out .5s !important;
+  }
+}

@@ -1,0 +1,15 @@
+.Badge {
+  height: 10px;
+  max-height: 10px;
+  background-color: #183d6f;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    background-color: #183d6f;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+  }
+}

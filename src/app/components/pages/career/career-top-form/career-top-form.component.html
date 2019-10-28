@@ -1,0 +1,138 @@
+<div class="container CareerTopForm pt-3 mb-5">
+  <h1 class="mt-5 pb-3 w-100 text-center CareerTopForm__title">Kariyer Formu</h1>
+  <p class="text-center mb-5">ÖZCANDAN SEYAHAT'ın bir parçası olmak ister misin?</p>
+  <form class="inquiryForm disableOnSubmit" [formGroup]="careerForm">
+    <div class="row mt-2">
+      <div class="col-lg-4 col-md-6 text-center mt-4">
+        <input type="text" formControlName="ad" class="form-control form-control-lg inputrenk" placeholder="AD">
+      </div>
+      <div class="col-lg-4 col-md-6 text-center mt-4">
+        <input type="text" formControlName="soyad" class="form-control form-control-lg inputrenk" placeholder="SOYAD">
+      </div>
+      <div class="col-lg-4 col-md-6 text-center mt-4">
+        <input type="email" formControlName="email" placeholder="E-MAİL" class="form-control form-control-lg inputrenk">
+      </div>
+
+
+      <div class="col-lg-4 col-md-6 text-center mt-4">
+        <select class="form-control form-control-lg inputrenk" aria-required="true"
+                (change)="genderSelectionChange($event)">
+          <option value="">CİNSİYET SEÇİNİZ</option>
+          <option value="erkek">ERKEK</option>
+          <option value="bayan">BAYAN</option>
+        </select>
+      </div>
+      <div class="col-lg-4 col-md-6 text-center mt-4">
+        <input type="text" formControlName="ehliyet" class="form-control form-control-lg inputrenk"
+               placeholder="EHLİYET SINIFI">
+      </div>
+      <div class="col-lg-4 col-md-6 text-center mt-4">
+        <select class="form-control form-control-lg inputrenk" aria-required="true"
+                (change)="askerlikSelectionChange($event)">
+          <option value="">ASKERLİK DURUMU SEÇİNİZ</option>
+          <option value="yapılmamış">YAPILMAMIŞ</option>
+          <option value="yapılmış">YAPILMIŞ</option>
+          <option value="tecilli">TECİLLİ</option>
+        </select>
+      </div>
+
+      <div class="col-lg-4 col-md-6 text-center mt-4">
+        <input type="tel" formControlName="telefon" placeholder="TELEFON"
+               class="form-control form-control-lg inputrenk">
+      </div>
+      <div class="col-lg-4 col-md-6 text-center mt-4">
+        <input type="text" formControlName="il" placeholder="OTURDUĞU İL"
+               class="form-control form-control-lg inputrenk">
+      </div>
+      <div class="col-lg-4 col-md-6 text-center mt-4">
+        <input type="text" formControlName="ilce" placeholder="OTURDUĞU İLÇE"
+               class="form-control form-control-lg inputrenk">
+      </div>
+
+
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-12  col-md-8 text-center mt-4">
+        <textarea class="form-control inputrenk" formControlName="mesaj" id="body" rows="10"
+                  style="resize:none;"
+                  placeholder="MESAJINIZ"></textarea>
+      </div>
+      <div class="col-lg-3 mt-4 text-center">
+        <button class="linkToAllBtn" (click)="formSubmit()">
+          <i class="fa fa-angle-right mr-2" style="font-size:24px; font-weight:bold;"></i><span
+          style="font-size:18px;font-weight:normal;">GÖNDER</span>
+        </button>
+      </div>
+
+      <div class="col-12 mt-5" *ngIf="sended">
+        <div class="alert alert-success" role="alert">
+          MESAJINIZ BAŞARIYLA GÖNDERİLMİŞTİR.
+        </div>
+      </div>
+    </div>
+
+
+  </form>
+</div>
+
+<hr style=" border: 6px solid #252161">
+<div class="container mb-5">
+  <h1 class="mt-5 pb-3 w-100 text-center CareerTopForm__title">Teklif İste</h1>
+  <p class="text-center mb-5">Görüş, öneri ve şikayetletrinizi aşağıdaki formu doldurarak bize hemen iletebilirsiniz
+    ?</p>
+  <section>
+    <form [formGroup]="teklifForm">
+      <div class="row mt-2">
+        <div class="col-lg-4 col-md-6 text-center mt-4">
+          <input type="text" formControlName="ad" class="form-control form-control-lg inputrenk" placeholder="AD">
+        </div>
+        <div class="col-lg-4 col-md-6 text-center mt-4">
+          <input type="text" formControlName="soyad" class="form-control form-control-lg inputrenk" placeholder="SOYAD">
+        </div>
+        <div class="col-lg-4 col-md-6 text-center mt-4">
+          <input type="email" formControlName="email" placeholder="E-MAİL"
+                 class="form-control form-control-lg inputrenk">
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 text-center mt-4">
+          <input type="text" formControlName="firmaUnvani" placeholder="FİRMA ÜNVANI"
+                 class="form-control form-control-lg inputrenk">
+        </div>
+        <div class="col-lg-4 col-md-6 text-center mt-4">
+          <input type="text" formControlName="calismaSaatleri" placeholder="ÇALIŞMA SAATLERİ"
+                 class="form-control form-control-lg inputrenk">
+        </div>
+        <div class="col-lg-4 col-md-6 text-center mt-4">
+          <input type="text" formControlName="guzergah" placeholder="GÜZERGAH"
+                 class="form-control form-control-lg inputrenk">
+        </div>
+
+
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8  col-md-8 text-center mt-4">
+          <textarea class="form-control inputrenk" formControlName="adres" rows="5" style="resize:none;"
+                    placeholder="ADRESİNİZ"></textarea>
+        </div>
+        <div class="col-lg-8  col-md-8 text-center mt-4">
+          <textarea class="form-control inputrenk" formControlName="mesaj" rows="5" style="resize:none;"
+                    placeholder="MESAJINIZ"></textarea>
+        </div>
+
+      </div>
+      <div class="col-lg-12 mt-4 text-center">
+        <button class="linkToAllBtn" (click)="teklifFormSubmit()">
+          <i class="fa fa-angle-right mr-2" style="font-size:24px; font-weight:bold;"></i><span
+          style="font-size:18px;font-weight:normal;">GÖNDER</span>
+        </button>
+      </div>
+      <div class="col-12 mt-5" *ngIf="teklifFormSended">
+        <div class="alert alert-success" role="alert">
+          MESAJINIZ BAŞARIYLA GÖNDERİLMİŞTİR.
+        </div>
+      </div>
+
+    </form>
+  </section>
+</div>
