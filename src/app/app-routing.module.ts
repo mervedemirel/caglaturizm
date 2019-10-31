@@ -15,7 +15,13 @@ const routes: Routes = [
   },
   {
     path: 'kurumsal',
-    component: CompanyComponent
+    component: CompanyComponent,
+    // data: {
+    //   seo: {
+    //     title: 'Kurumsal | Özcandan Seyahat',
+    //     description: 'lorem ipsum dolor sit amet'
+    //   }
+    // }
   },
   {
     path: 'hizmetlerimiz',
