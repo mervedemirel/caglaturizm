@@ -12,7 +12,7 @@ export class ReferencesComponent implements OnInit {
 
   ngOnInit() {
     this.title.setTitle('Özcandan Seyahat');
-    this.meta.addTag({name: 'description', content: 'Bu bir description yazısıdır.'});
+    this.meta.addTag({name: 'description', content: 'Hizmet Kalitemizden Memnun Kalıp Bizi Tercih eden referanslarımız.'});
   }
 
 }

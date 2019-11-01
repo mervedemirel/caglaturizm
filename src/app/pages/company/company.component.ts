@@ -12,7 +12,7 @@ export class CompanyComponent implements OnInit {
 
   ngOnInit() {
     this.title.setTitle('Özcandan Seyahat');
-    this.meta.addTag({name: 'description', content: 'Bu bir description yazısıdır.'});
+    this.meta.addTag({name: 'description', content: 'Teknolojik Değişimlere Açık,Modern,Yenilik Hizmette Temel Vizyonumuzdur.'});
   }
 
 }

@@ -12,7 +12,7 @@ export class ServicesComponent implements OnInit {
 
   ngOnInit() {
     this.title.setTitle('Özcandan Seyahat');
-    this.meta.addTag({name: 'description', content: 'Bu bir description yazısıdır.'});
+    this.meta.addTag({name: 'description', content: 'Personel,Öğrenci,Vip Taşımacılıkta Rahat,Güvenli,Kaliteli, Ulaşım Konforu Sağlamak.'});
   }
 
 }
