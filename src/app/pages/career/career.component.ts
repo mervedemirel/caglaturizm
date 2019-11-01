@@ -1,5 +1,5 @@
+import { Title, Meta } from '@angular/platform-browser';
 import { Component, OnInit } from '@angular/core';
-import {FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-career',
@@ -8,9 +8,11 @@ import {FormGroup} from '@angular/forms';
 })
 export class CareerComponent implements OnInit {
 
-  constructor() { }
+  constructor(public title: Title, private meta: Meta) { }
 
   ngOnInit() {
+    this.title.setTitle('Özcandan Seyahat');
+    this.meta.addTag({name: 'description', content: 'Bu bir description yazısıdır.'});
   }
 
 }

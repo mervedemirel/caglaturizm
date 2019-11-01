@@ -8,11 +8,11 @@ import {Meta, Title} from '@angular/platform-browser';
 })
 export class CompanyComponent implements OnInit {
 
-  constructor(private meta: Meta, private title: Title) {
-  }
+  constructor(public title: Title, private meta: Meta) { }
 
   ngOnInit() {
-
+    this.title.setTitle('Özcandan Seyahat');
+    this.meta.addTag({name: 'description', content: 'Bu bir description yazısıdır.'});
   }
 
 }

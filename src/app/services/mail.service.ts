@@ -14,7 +14,7 @@ export class MailService {
       toEmail: undefined,
       mailBody: undefined
     };
-    sendMailObject.toEmail = 'vogaart@gmail.com';
+    sendMailObject.toEmail = 'vogaartt@gmail.com';
     sendMailObject.mailBody = `<b>Ad:</b> ${mailObject.ad} <br>
                                <b>Soyad:</b> ${mailObject.soyad} <br>
                                <b>E-Mail:</b> ${mailObject.email} <br>
@@ -28,7 +28,7 @@ export class MailService {
       toEmail: undefined,
       mailBody: undefined
     };
-    sendMailObject.toEmail = 'balcimustafa1@gmail.com';
+    sendMailObject.toEmail = 'info@ozcandanseyahat.com.tr';
     sendMailObject.mailBody = mailObject;
     return this.http.post('https://mailer.sehatekgis.com/contact', sendMailObject);
   }
