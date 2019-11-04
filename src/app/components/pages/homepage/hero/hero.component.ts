@@ -20,6 +20,13 @@ export class HeroComponent implements OnInit {
     });
 
     setInterval(() => mySiema.next(), 10000);
+
+    const prev = document.querySelector('.Hero__slider--prev');
+    const next = document.querySelector('.Hero__slider--next');
+
+    prev.addEventListener('click', () => mySiema.prev());
+    next.addEventListener('click', () => mySiema.next());
+
   }
 }
 

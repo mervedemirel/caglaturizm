@@ -14,7 +14,7 @@ export class MailService {
       toEmail: undefined,
       mailBody: undefined
     };
-    sendMailObject.toEmail = 'vogaartt@gmail.com';
+    sendMailObject.toEmail = 'info@ozcandanseyahat.com.tr';
     sendMailObject.mailBody = `<b>Ad:</b> ${mailObject.ad} <br>
                                <b>Soyad:</b> ${mailObject.soyad} <br>
                                <b>E-Mail:</b> ${mailObject.email} <br>
