@@ -19,7 +19,7 @@ export class HeroComponent implements OnInit {
       loop: true
     });
 
-    setInterval(() => mySiema.next(), 3000);
+    setInterval(() => mySiema.next(), 10000);
   }
-
 }
+

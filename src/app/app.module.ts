@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { HeroComponent } from './components/pages/homepage/hero/hero.component';
 import { ButtonComponent } from './components/shared/button/button.component';
+import { ButtonHizmetComponent} from './components/shared/buttonhizmet/button.component';
 import { OsHakkindaComponent } from './components/pages/homepage/os-hakkinda/os-hakkinda.component';
 import { ParallaxComponent } from './components/pages/homepage/parallax/parallax.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
@@ -27,6 +28,7 @@ import { BranchesComponent } from './components/pages/contact/branches/branches.
 import { ContactFormComponent } from './components/pages/contact/contact-form/contact-form.component';
 import {HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     HeaderComponent,
     HeroComponent,
     ButtonComponent,
+    ButtonHizmetComponent,
     OsHakkindaComponent,
     ParallaxComponent,
     FooterComponent,

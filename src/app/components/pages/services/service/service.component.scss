@@ -52,4 +52,16 @@ h1 {
   }
 }
 
+@media (min-width: 309px) and (max-width: 574px) {
+  .title2 h1 {
+    font-size: 22px;
+    color: #252161;
+    font-weight: 300;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+}
+
+
+
 
