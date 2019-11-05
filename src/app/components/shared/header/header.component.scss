@@ -32,6 +32,8 @@
 
   &:hover > i {
     opacity: 1;
+    
+
   }
 
   &:after {
@@ -41,6 +43,9 @@
     height: 2px;
     transition: width .5s;
     background: red;
+      @media (max-width: 767px) {
+      display: none;
+    }
   }
 
   &:hover::after {

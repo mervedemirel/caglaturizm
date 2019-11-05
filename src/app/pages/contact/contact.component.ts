@@ -11,7 +11,7 @@ export class ContactComponent implements OnInit {
   constructor(private title: Title, private meta: Meta) { }
 
   ngOnInit() {
-    this.title.setTitle('İletişim | Özcandan Seyahat');
+    this.title.setTitle('Özcandan Seyahat | İletişim');
     this.meta.addTag({name: 'description', content: 'Fiyat Almak,Kaliteli,Konforlu,Hizmetlerimizden yararlanmak için Bize Ulaşabilirsiniz'})
   }
 

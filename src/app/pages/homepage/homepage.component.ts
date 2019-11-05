@@ -11,7 +11,7 @@ export class HomepageComponent implements OnInit {
   constructor(public title: Title, private meta: Meta) { }
 
   ngOnInit() {
-    this.title.setTitle('Özcandan Seyahat');
+    this.title.setTitle('Özcandan Seyahat | Ana Sayfa');
     this.meta.addTag({name: 'description', content: 'Konforlu,Güvenli,Donanımlı Araçlarımızla Müşterilerimizin Daima Hizmetinizdeyiz'});
   }
 
