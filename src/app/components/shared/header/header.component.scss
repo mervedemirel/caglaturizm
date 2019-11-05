@@ -52,6 +52,9 @@
     width: 100%;
     //display: block;
     transition: width .5s;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
