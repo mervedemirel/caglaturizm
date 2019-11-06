@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.title.setTitle('Özcandan Seyahat | İletişim');
-    this.meta.addTag({name: 'description', content: 'Fiyat Almak,Kaliteli,Konforlu,Hizmetlerimizden yararlanmak için Bize Ulaşabilirsiniz'})
+    this.meta.addTag({name: 'description', content: 'Fiyat Almak,Kalite,Konforlu,Hizmetlerimizden yararlanmak için Bize Ulaşabilirsiniz'});
   }
 
 }
