@@ -11,7 +11,7 @@ export class ServicesComponent implements OnInit {
   constructor(public title: Title, private meta: Meta) { }
 
   ngOnInit() {
-    this.title.setTitle('Özcandan Seyahat | Hizmetlerimiz');
+    this.title.setTitle('Çağla Turizm | Hizmetlerimiz');
     this.meta.addTag({name: 'description', content: 'Personel,Öğrenci,Vip Taşımacılıkta Rahat,Güvenli,Kaliteli, Ulaşım Konforu Sağlamak.'});
   }
 

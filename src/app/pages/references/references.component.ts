@@ -11,7 +11,7 @@ export class ReferencesComponent implements OnInit {
   constructor(public title: Title, private meta: Meta) { }
 
   ngOnInit() {
-    this.title.setTitle('Özcandan Seyahat | Referanslar');
+    this.title.setTitle('Çağla Turizm | Referanslar');
     this.meta.addTag({name: 'description', content: 'Hizmet Kalitemizden Memnun Kalıp Bizi Tercih eden referanslarımız.'});
   }
 

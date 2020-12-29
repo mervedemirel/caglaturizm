@@ -11,7 +11,7 @@ export class CareerComponent implements OnInit {
   constructor(public title: Title, private meta: Meta) { }
 
   ngOnInit() {
-    this.title.setTitle('Özcandan Seyahat | Kariyer');
+    this.title.setTitle('Çağla Turizm | Kariyer');
     this.meta.addTag({name: 'description', content: 'Biz Bir Aileyiz.Sende Ailemize Katılıp,Bizimle Çalışmak İster Misin?'});
   }
 
